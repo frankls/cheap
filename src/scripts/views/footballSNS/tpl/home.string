@@ -1,0 +1,25 @@
+<section class="m-home">
+	<header>
+	  <ul>
+	    <li class="active">热点</li>
+	    <li>关注</li>
+	  </ul>
+	</header>
+	<nav>
+		<div>足球现场</div>
+		<div class="active">足球生活</div>
+		<div>足球美女</div>
+	</nav>
+	<div qapp-widget="scroll">
+		<div class="box">
+			<div class="pic">
+				<div ms-repeat-el="list">
+					<span>
+						<img ms-src="el.imgSrc" />
+						<i ms-html="el.title"></i>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

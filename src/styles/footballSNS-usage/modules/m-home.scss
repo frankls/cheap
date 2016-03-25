@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+.m-home {
+	@include flexbox(flex);
+	@include flex-direction(column);
+	height: 100%;
+	header {
+		height: 0.44rem;
+		background: #0f91c5;
+		@include flexbox(flex);
+		@include align-items(center);
+		@include justify-content(center);
+		ul {
+			@include flexbox(flex);
+			width: 1.06rem;
+			li {
+				@include flex(1);
+				text-align: center;
+				background: #57b2d7;
+				height: .22rem;
+				font-size: .12rem;
+				line-height: .22rem;
+				color: #b1e4f8;
+				&.active {
+					color: #fff;
+					background: #79c1df;
+				}
+				&:first-child {
+					border-top-left-radius: 0.1rem;
+					border-bottom-left-radius: 0.1rem;
+				}
+				&:last-child {
+					border-top-right-radius: 0.1rem;
+					border-bottom-right-radius: 0.1rem;
+				}
+			}
+		}
+	}
+	nav {
+		height: .34rem;
+		@include flexbox(flex);
+		@include box-sizing(border-box);
+		@include border($border-width: 0 0 1px 0, $border-color: #cdcdcd);
+		div {
+			@include box-sizing(border-box);
+			@include flex(1);
+			text-align: center;
+			line-height: .34rem;
+			font-size: .14rem;
+			color: #0f91c5;
+			background: #fff;
+			&.active {
+				border-bottom: .03rem solid #0f91c5;
+			}
+		}
+	}
+	> div {
+		width: 100% !important;
+		@include flex(1);
+		background: #fff;
+		@include box-sizing(border-box);
+		border-top: 0.05rem #f1f1f1 solid;
+		position: relative;
+		.box {
+			cursor: pointer;
+			position: absolute;
+			.pic {
+				@include prefix(column-count, 2);
+				@include prefix(column-gap, 0.08rem);
+				margin-bottom: .5rem;
+				>div {
+					padding-bottom: .08rem;
+					@include prefix(column-break-inside, avoid);
+					span {
+						display: block;
+						width: 100%;
+						@include border($border-width: 1px, $border-color: #e5e5e5);
+						img {
+							width: 100%;
+						}
+						i {
+							padding: .08rem 0.1rem;
+							font-size: .14rem;
+							display: block;
+							@include border($border-width: 1px 0 0 0, $border-color: #e5e5e5);
+						}
+					}
+				}
+			}
+		}
+	}
+}

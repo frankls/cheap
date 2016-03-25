@@ -1,0 +1,27 @@
+<section class="m-index">
+  <div class="m-index-body"></div>
+  <div class="m-index-gap"></div>
+  <div class="m-index-nav">
+  	<ul>
+  		<li class="active" action-type="tab.switch" data-tag="home" node-type="home">
+  			<i class="yo-ico">&#xe6bb;</i>
+  			<b>首页</b>
+  		</li>
+  		<li action-type="tab.switch" data-tag="searching" node-type="searching">
+  			<i class="yo-ico">&#xe65c;</i>
+  			<b>发现</b>
+  		</li>
+  		<li>
+  			<i class="paipai"><span class="yo-ico">&#xe664;</span></i>
+  		</li>
+  		<li action-type="tab.switch" data-tag="my" node-type="my">
+  			<i class="yo-ico">&#xe735;</i>
+  			<b>我的</b>
+  		</li>
+  		<li action-type="exit">
+  			<i class="yo-ico">&#xe6a3;</i>
+  			<b>退出</b>
+  		</li>
+  	</ul>
+  </div>
+</section>
