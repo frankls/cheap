@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import "../core/swiper-3.3.1.min.css";
+
+.m-home {
+	@include flexbox(flex);
+	@include flex-direction(column);
+	height: 100%;
+	.nav {
+	    color: #000000;
+		height: 34px;
+		@include flexbox(flex);
+		@include box-sizing(border-box);
+		@include border($border-width: 0 0 1px 0, $border-color: #cdcdcd);
+		>div {
+			@include box-sizing(border-box);
+			@include flex(1);
+			text-align: center;
+			line-height: .34rem;
+			font-size: .14rem;
+			color: #0f91c5;
+			background: #fff;
+			&.active {
+				border-bottom: .03rem solid #0f91c5;
+			}
+		}
+	}
+    .content {
+        width: 100% !important;
+        @include flex(1);
+        background: #fff;
+        @include box-sizing(border-box);
+        .box{
+            overflow: hidden;
+            padding-bottom: .5rem;
+            .list {
+                @include box-sizing(border-box);
+                width: 50%;
+                padding: 2px;
+                float: left;
+                cursor: pointer;
+                font-size:.14em;
+                >img{
+                    width: 100%;
+                }
+                >p{
+                    padding-left: 4%;
+                    padding-right: 4%;
+                    @include flexbox(flex);
+                    b{
+                        @include flex(1);
+                        color: #f00;
+                    }
+                    span{
+                        @include flex(1);
+                        color: #AAAAAA;
+                    }
+                    span.lth{
+                        text-decoration: line-through;
+                    }
+                }
+                i{
+                    @include ellipsis(true);
+                }
+            }
+        }
+    }
+}

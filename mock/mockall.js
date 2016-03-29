@@ -7,6 +7,19 @@ module.exports = {
         {
             pattern: /\/interface\/getList.do/,
             respondwith: "./list.json"
+        },
+        {
+            pattern: /\/interface\/getHomeNewList.do/,
+            respondwith: "./homenewList.json"
+        },
+        {
+            pattern: /\/interface\/getHomeTimeList.do/,
+            respondwith: "./homeTopList.json"
+        },
+        {
+            pattern: /\/interface\/getHomeTopList.do/,
+            respondwith: "./homeTimeList.json"
         }
+        
     ]
 };

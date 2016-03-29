@@ -1,0 +1,11 @@
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/cheap/images/first_leading_1.png" /></div>
+        <div class="swiper-slide"><img src="/cheap/images/first_leading_2.png" /></div>
+        <div class="swiper-slide" action-type="tap.alert"><img src="/cheap/images/first_leading_3.png" /></div>
+        <div class="swiper-slide"><img src="/cheap/images/first_leading_4.png"/></div>
+    </div>
+</div>
+<div class="guild-go">
+	<b action-type="tap.gotoIndex">立即体验</b>
+</div>

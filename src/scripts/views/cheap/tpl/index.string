@@ -1,0 +1,23 @@
+<section class="m-index">
+  <div class="m-index-body"></div>
+  <div class="m-index-nav">
+    <ul>
+      <li class="active" action-type="tab.switch" data-tag="home" node-type="home">
+        <i class="yo-ico">&#xf0030;</i>
+        <b>首页</b>
+      </li>
+      <li action-type="tab.switch" data-tag="searching" node-type="searching">
+        <i class="yo-ico">&#xe602;</i>
+        <b>搜索</b>
+      </li>
+      <li action-type="tab.switch" data-tag="stroll" node-type="stroll">
+        <i class="yo-ico">&#xe638;</i>
+        <b>值得逛</b>
+      </li>
+      <li action-type="tab.switch" data-tag="my" node-type="my">
+        <i class="yo-ico">&#xe618;</i>
+        <b>个人中心</b>
+      </li>
+    </ul>
+  </div>
+</section>
